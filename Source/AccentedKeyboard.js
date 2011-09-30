@@ -1,19 +1,24 @@
 /*
 ---
- description: Allows users to select accented characters as commonly done on touch screens, but with a keyboard
 
- license:
+script: AccentedKeyboard.js
+
+description: Allows users to select accented characters as commonly done on touch screens, but with a keyboard
+
+license:
  - MIT-style
 
- authors:
+authors:
  - Thomas Kunambi, 23 Critters
 
- requires:
- - core/1.3: [Array, Class, Object, Function, Browser, Element.Dimension, Element.Event, Element.Forms]
+requires:
+ - core/1.3: *
+ - Element.Forms
 
- provides: AccentedKeyboard
- ...
- */
+provides: [AccentedKeyboard]
+
+...
+*/
 
 var AccentedKeyboard = new Class({
     Implements: [Options],
