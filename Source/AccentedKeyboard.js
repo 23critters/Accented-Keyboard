@@ -1,5 +1,5 @@
 /*
- ---
+---
  description: Allows users to select accented characters as commonly done on touch screens, but with a keyboard
 
  license:
