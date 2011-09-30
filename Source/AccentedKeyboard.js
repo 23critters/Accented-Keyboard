@@ -23,10 +23,11 @@ provides: [AccentedKeyboard]
 var AccentedKeyboard = new Class({
     Implements: [Options],
     options: {
+        bookmarklet: false,
         wrapperTag: "div",
         cssActions: {
             "h": "hover",
-            "w": "wrapper"
+            "w": "accentedkeyboardwrapper"
         }
     },
     /**
@@ -149,9 +150,11 @@ var AccentedKeyboard = new Class({
     _show: function(oEntities, sChar) {
         this.hide();
 
+        var oPosition = (!this.options.bookmarklet)?{"top":this.element.getSize().y.toInt(10),"left":""}:{"top":this.element.getPosition().y.toInt(10)+this.element.getSize().y.toInt(10),"left":this.element.getPosition().x.toInt(10)};
         this.list = new Element("ul#accentedkeyboardcontainer", {
             "styles": {
-                "top": this.element.getSize().y.toInt()
+                "top": oPosition.top,
+                "left": oPosition.left
             }
         }).adopt(
             new Element("li").adopt(

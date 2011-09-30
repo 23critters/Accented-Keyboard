@@ -1,6 +1,5 @@
-DIV.wrapper {
+DIV.accentedkeyboardcontainerwrapper {
     position: relative;
-    padding-bottom: 20px;
     display: inline-block;
 }
 UL#accentedkeyboardcontainer {
@@ -14,6 +13,7 @@ UL#accentedkeyboardcontainer {
     background-color: window;
     float: left;
     box-shadow: 3px 3px 5px buttonshadow;
+    z-index: 9999999;
 }
 UL#accentedkeyboardcontainer:before {
     content: "";
@@ -30,12 +30,13 @@ UL#accentedkeyboardcontainer:before {
     top: -15px;
 }
 UL#accentedkeyboardcontainer LI {
+    list-style-type: none;
     margin-right: 3px;
     margin-bottom: 3px;
     float: left;
 }
 UL#accentedkeyboardcontainer LI:last-child {
-    margin: 0;
+    margin-right: 0;
 }
 UL#accentedkeyboardcontainer A {
     color: buttontext;
