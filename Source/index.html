@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Accented Keyboard</title>
+<link rel="stylesheet" href="AccentedKeyboard.css" type="text/css" />
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/mootools/1.3/mootools.js"></script>
+<script type="text/javascript" src="Element.Forms.js"></script>
+<script type="text/javascript" src="AccentedKeyboard.js"></script>
+<script type="text/javascript">
+window.addEvent("domready", function(e) {
+    new AccentedKeyboard({
+        element: document.getElement("input.accented")
+    })
+})
+</script>
+</head>
+<body>
+
+<form>
+<fieldset>
+    <input type="text" class="accented" autofocus="autofocus" />
+</fieldset>
+</form>
+</body>
+</html>

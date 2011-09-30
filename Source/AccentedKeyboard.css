@@ -1,0 +1,56 @@
+DIV.wrapper {
+    position: relative;
+    padding-bottom: 20px;
+    display: inline-block;
+}
+UL#accentedkeyboardcontainer {
+    list-style-type: none;
+    position: absolute;
+    margin: 5px 0 0;
+    left: 0;
+    padding: 3px 3px 1px;
+    border: 1px solid threedshadow;
+    border-radius: 4px;
+    background-color: window;
+    float: left;
+    box-shadow: 3px 3px 5px buttonshadow;
+}
+UL#accentedkeyboardcontainer:before {
+    content: "";
+    position: absolute;
+    border-color: transparent transparent threedshadow;
+    border-style: dashed dashed solid;
+    border-width: 10px 10px 5px;
+    display: inline-block;
+    height: 0;
+    line-height: 0;
+    position: absolute;
+    width: 0;
+    font-size: 1em;
+    top: -15px;
+}
+UL#accentedkeyboardcontainer LI {
+    margin-right: 3px;
+    margin-bottom: 3px;
+    float: left;
+}
+UL#accentedkeyboardcontainer LI:last-child {
+    margin: 0;
+}
+UL#accentedkeyboardcontainer A {
+    color: buttontext;
+    text-decoration: none;
+    float: left;
+    border-radius: 3px;
+    border: 1px solid buttonshadow;
+    text-align: center;
+    font: bold 14px "Arial", sans-serif;
+    padding: 2px 0px 0px;
+    min-width: 16px;
+    height: 17px;
+    box-shadow: 1px 1px buttonshadow;
+}
+UL#accentedkeyboardcontainer A.hover {
+    background-color: activecaption;
+    color: highlight;
+}
