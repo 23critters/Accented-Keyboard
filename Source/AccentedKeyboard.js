@@ -12,7 +12,7 @@ authors:
  - Thomas Kunambi, 23 Critters
 
 requires:
- - core/1.3: *
+ - core/1.3: '*'
  - Element.Forms
 
 provides: [AccentedKeyboard]
@@ -164,7 +164,7 @@ var AccentedKeyboard = new Class({
                     "class": this.oCss.h
                 })
             )
-        ).inject(this.container);
+        ).inject((!this.options.bookmarklet)?this.container:document.body);
 
         Object.each(oEntities, function(key) {
             new Element("li").adopt(

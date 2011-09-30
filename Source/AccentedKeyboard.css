@@ -1,4 +1,4 @@
-DIV.accentedkeyboardcontainerwrapper {
+DIV.accentedkeyboardwrapper {
     position: relative;
     display: inline-block;
 }
@@ -27,7 +27,7 @@ UL#accentedkeyboardcontainer:before {
     position: absolute;
     width: 0;
     font-size: 1em;
-    top: -15px;
+    top: auto;
 }
 UL#accentedkeyboardcontainer LI {
     list-style-type: none;

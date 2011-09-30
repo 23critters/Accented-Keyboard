@@ -27,6 +27,12 @@ HTML snippet:
     </fieldset>
     </form>
 
+
+In order to use this as a bookmarklet, please add this as a bookmark:
+
+    javascript:(function(){ak=document.createElement('SCRIPT');ak.type='text/javascript';ak.src='http://23c.se/Accented-Keyboard/Source/AccentedKeyboard-Bookmarklet.js';document.getElementsByTagName('head')[0].appendChild(ak);})();
+
+
 Options
 -----------------
 

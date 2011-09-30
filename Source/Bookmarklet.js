@@ -12,7 +12,7 @@ authors:
  - Thomas Kunambi, 23 Critters
 
 requires:
- - core/1.3: *
+ - core/1.3: '*'
  - Element.Forms
 
 provides: [AccentedKeyboard]
